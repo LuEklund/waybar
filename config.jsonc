@@ -3,8 +3,8 @@
   "layer": "top", // Stacking layer (background|bottom|top|overlay); top = above windows
   "position": "top", // Waybar position (top|bottom|left|right)
   "exclusive": false, // Don't reserve space; windows render under the bar
-  "start_hidden": true, // Hidden; flashes briefly on workspace switch (flash.sh)
-  "height": 25, // Waybar height (to be removed for auto height)
+  "start_hidden": true, // Hidden; shown while wofi is open (hyprland.lua menu)
+  "height": 34, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
