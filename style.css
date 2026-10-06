@@ -28,15 +28,30 @@ window#waybar {
 #workspaces button {
   color: #6c7086;
   padding: 0 6px;
-  border: none;
+  margin: 3px 2px;
+  border: 1px solid rgba(108, 112, 134, 0.4);
   border-radius: 8px;
-  background: transparent;
+  background: rgba(49, 50, 68, 0.6);
   box-shadow: none;
 }
 
 #workspaces button.active {
   color: #b4befe;
+  border-color: #b4befe;
+  background: rgba(180, 190, 254, 0.2);
 }
+
+/* per-workspace colors: mauve, teal, blue, green, pink */
+#workspaces button:nth-child(1) { color: rgba(203, 166, 247, 0.8); border-color: rgba(203, 166, 247, 0.55); }
+#workspaces button:nth-child(1).active { color: #cba6f7; border-color: #cba6f7; background: rgba(203, 166, 247, 0.25); }
+#workspaces button:nth-child(2) { color: rgba(148, 226, 213, 0.8); border-color: rgba(148, 226, 213, 0.55); }
+#workspaces button:nth-child(2).active { color: #94e2d5; border-color: #94e2d5; background: rgba(148, 226, 213, 0.25); }
+#workspaces button:nth-child(3) { color: rgba(137, 180, 250, 0.8); border-color: rgba(137, 180, 250, 0.55); }
+#workspaces button:nth-child(3).active { color: #89b4fa; border-color: #89b4fa; background: rgba(137, 180, 250, 0.25); }
+#workspaces button:nth-child(4) { color: rgba(166, 227, 161, 0.8); border-color: rgba(166, 227, 161, 0.55); }
+#workspaces button:nth-child(4).active { color: #a6e3a1; border-color: #a6e3a1; background: rgba(166, 227, 161, 0.25); }
+#workspaces button:nth-child(5) { color: rgba(245, 194, 231, 0.8); border-color: rgba(245, 194, 231, 0.55); }
+#workspaces button:nth-child(5).active { color: #f5c2e7; border-color: #f5c2e7; background: rgba(245, 194, 231, 0.25); }
 
 #workspaces button:hover {
   background: rgba(180, 190, 254, 0.15);
